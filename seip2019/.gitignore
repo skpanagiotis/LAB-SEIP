@@ -1,9 +1,11 @@
 .settings/*
+
 .project
+
 gradeshistogram/.settings/*
+
 gradeshistogram/.project
-gradeshistogram/.classpath
-gradeshistogram/target/classes/*
+gradeshistogram/
+.classpath
 
-
-
+gradeshistogram/target/*
