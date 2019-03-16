@@ -6,7 +6,7 @@
 	<artifactId>seip2019</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
-	<name>Grades</name>
+	<name>SEIP_LAB_2019</name>
 	<description>A chart visualization of grades</description>
 	<modules>
 		<module>gradeshistogram</module>
