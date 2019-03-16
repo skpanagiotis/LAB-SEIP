@@ -7,11 +7,11 @@ This repository includes my assignments for LAB Excercises in SEIP
 
 ### Getting Started
 
-####Prerequisites
+#### Prerequisites
 `Java version 1.8`
 `Apache Maven 3.6`
 
-####Build
+#### Build
 
 1. Clone or Download the project in your local machine.
 2. Open your terminal.
@@ -21,6 +21,6 @@ This repository includes my assignments for LAB Excercises in SEIP
 6. To run the program write:
 `java -jar gradeshistogram-0.0.1-SNAPSHOT-jar-with-dependencies.jar [filepath]`
 
-###Built with
+### Built with
 - [Maven] (https://maven.apache.org)
 - [Java] (https://www.java.com/en/)
