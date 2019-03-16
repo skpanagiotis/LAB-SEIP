@@ -5,12 +5,22 @@ This repository includes my assignments for LAB Excercises in SEIP
 
 **1st Assignment** includes a program that takes a .txt file with grades and make a chart.
 
-### Run
+### Getting Started
 
-*This program runs in terminal*
+####Prerequisites
+`Java version 1.8`
+`Apache Maven 3.6`
 
-1. Clone or Download in your local machine.
+####Build
+
+1. Clone or Download the project in your local machine.
 2. Open your terminal.
-3. Go to folder seip2019/gradeshistogram/target
-4. Write "java -jar gradeshistogram-0.0.1-SNAPSHOT-jar-with-dependencies.jar" and press enter.
-5. Insert the **.txt** file with grades. 
+3. Go to folder /seip2019 `cd ..../folder1/folder2/seip2019`
+4. Write `mvn install`
+5. Go to folder /target `cd gradeshistogram\target`
+6. To run the program write:
+`java -jar gradeshistogram-0.0.1-SNAPSHOT-jar-with-dependencies.jar [filepath]`
+
+###Built with
+- [Maven] (https://maven.apache.org)
+- [Java] (https://www.java.com/en/)
