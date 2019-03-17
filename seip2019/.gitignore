@@ -1,0 +1,6 @@
+.settings/*
+.project
+gradeshistogram/.settings/*
+gradeshistogram/.project
+gradeshistogram/.classpath
+gradeshistogram/target/*
