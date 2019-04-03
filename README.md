@@ -45,6 +45,9 @@ This repository includes my assignments for LAB Excercises in SEIP
 6. To run the program write:
 `java -jar metricsCalculator-jar-with-dependencies.jar [filepath] [string or regex]`
 
+### Here is a java file to test the program:
+https://github.com/skpanagiotis/LAB-SEIP/tree/development/seip2019/JavaAnalyzer/test.java
+
 ### Built with
 - [Maven] (https://maven.apache.org)
 - [Java] (https://www.java.com/en/)
