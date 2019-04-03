@@ -7,8 +7,9 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>SEIP_LAB_2019</name>
-	<description>A chart visualization of grades</description>
+	<description>The XML for the LAB Assignments</description>
 	<modules>
 		<module>gradeshistogram</module>
+		<module>JavaAnalyzer</module>
 	</modules>
 </project>
