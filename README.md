@@ -50,5 +50,5 @@ This repository includes my assignments for LAB Excercises in SEIP
 - [Java] (https://www.java.com/en/)
 
 ### The UML Diagram
-![UML DIAGRAM](https://raw.githubusercontent.com/skpanagiotis/LAB-SEIP/development/JavaAnalyzer/UML_diagram.png)
+![UML DIAGRAM](https://raw.githubusercontent.com/skpanagiotis/LAB-SEIP/development/seip2019/JavaAnalyzer/UML_diagram.png?token=AfP-E_ap1-zxhhFms5DjP_NabxqdVMTwks5cpFkGwA%3D%3D)
 
