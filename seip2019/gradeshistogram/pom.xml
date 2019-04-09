@@ -8,6 +8,8 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<artifactId>gradeshistogram</artifactId>
+	<name>gradeshistogram</name>
+	<description>Grades Histogram takes a csv file with students' grades and generates a histogram</description>
 	<dependencies>
 		<dependency>
 			<groupId>org.jfree</groupId>
