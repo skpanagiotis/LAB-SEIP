@@ -55,20 +55,19 @@ public class ReWrOps {
 		try {
 			writer = new PrintWriter(new File("analytics.csv"));
 			StringBuilder sb = new StringBuilder();
-			sb.append("Lines of Code: ");
+			sb.append("loc");
 			sb.append(";");
+			sb.append("nom");
+			sb.append(";");
+			sb.append("noc");
+			sb.append('\n');
+
 			sb.append(loc);
-			sb.append('\n');
-
-			sb.append("Number of Classes: ");
-			sb.append(";");
-			sb.append(noc);
-			sb.append('\n');
-
-			sb.append("Number of Methods: ");
 			sb.append(";");
 			sb.append(nom);
-			sb.append('\n');
+			sb.append(";");
+			sb.append(noc);
+			
 
 			writer.write(sb.toString());
 			writer.flush();
