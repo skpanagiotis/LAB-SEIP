@@ -22,7 +22,7 @@ public class AnalyzerIO {
 	 * @return an array with size three which include the metrics
 	 */
 	public int[] string_analyze(ArrayList<String> code) {
-		Analyzer_viaString AVS = new Analyzer_viaString();
+		AnalyzerViaString AVS = new AnalyzerViaString();
 		nom = AVS.nom(code);
 		noc = AVS.noc(code);
 		code = remove_comments(code);
@@ -41,7 +41,7 @@ public class AnalyzerIO {
 	 * @return an array with size three which include the metrics
 	 */
 	public int[] regex_analyze(ArrayList<String> code) {
-		Analyzer_viaRegex AVR = new Analyzer_viaRegex();
+		AnalyzerViaRegex AVR = new AnalyzerViaRegex();
 		nom = AVR.nom(code);
 		noc = AVR.noc(code);
 		code = remove_comments(code);
@@ -88,6 +88,7 @@ public class AnalyzerIO {
 		}
 
 		return comments_loc;
+		
 	}
 
 	/***
@@ -104,8 +105,9 @@ public class AnalyzerIO {
 		while (!comments_loc.isEmpty()) {
 			String s = comments_loc.get(0);
 			if (s.contains(",")) {
-				int start = Integer.parseInt(s.substring(0, 1));
-				int end = Integer.parseInt(s.substring(2));
+				int comma = s.indexOf(',');
+				int start = Integer.parseInt(s.substring(0, comma));
+				int end = Integer.parseInt(s.substring(comma + 1, s.length()));
 				for (int i = end; i >= start; i--) {
 					code.remove(i);
 				}

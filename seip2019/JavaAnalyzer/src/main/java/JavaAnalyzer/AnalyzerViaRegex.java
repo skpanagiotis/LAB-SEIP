@@ -10,7 +10,7 @@ import java.util.regex.*;
  * @author PANAGIOTIS
  *
  */
-public class Analyzer_viaRegex implements Analyzer {
+public class AnalyzerViaRegex implements Analyzer {
 
 	/***
 	 *
@@ -36,7 +36,7 @@ public class Analyzer_viaRegex implements Analyzer {
 	public int noc(ArrayList<String> code) {
 		int i = 0;
 		Pattern p = Pattern.compile(
-				"\\s*(public|private)\\s+class\\s+(\\w+)\\s+((extends\\s+\\w+)|(implements\\s+\\w+( ,\\w+)*))?\\s*\\{");
+				"(((|public|final|abstract|private|static|protected)(\\s+))?(class)(\\s+)(\\w+)(<.*>)?(\\s+extends\\s+\\w+)?(<.*>)?(\\s+implements\\s+)?(.*)?(<.*>)?(\\s*))\\{$");
 		Matcher m;
 		for (String s : code) {
 			m = p.matcher(s);
@@ -55,7 +55,7 @@ public class Analyzer_viaRegex implements Analyzer {
 	public int nom(ArrayList<String> code) {
 		int i = 0;
 		Pattern p = Pattern.compile(
-				"(public|protected|private|static|\\s) +[\\w\\<\\>\\[\\]]+\\s+(\\w+) *\\([^\\)]*\\) *(\\{?|[^;])");
+				"((public|protected|private|static|\\s)|[^if|while|else if|for])+?[\\w\\<\\>\\[\\]]+\\s+(\\w+) *\\([^\\)]*\\) *(\\{?|[^;])");
 		Matcher m;
 		for (String s : code) {
 			m = p.matcher(s);

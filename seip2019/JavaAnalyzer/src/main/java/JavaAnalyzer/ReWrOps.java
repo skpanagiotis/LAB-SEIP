@@ -13,10 +13,7 @@ import java.util.ArrayList;
  * @author PANAGIOTIS
  *
  */
-public class Re_Wr_Ops {
-
-	public Re_Wr_Ops() {
-	}
+public class ReWrOps {
 
 	/***
 	 * This method put every line of a file in every slot of an ArrayList of Strings
@@ -59,14 +56,17 @@ public class Re_Wr_Ops {
 			writer = new PrintWriter(new File("analytics.csv"));
 			StringBuilder sb = new StringBuilder();
 			sb.append("Lines of Code: ");
+			sb.append(";");
 			sb.append(loc);
 			sb.append('\n');
 
 			sb.append("Number of Classes: ");
+			sb.append(";");
 			sb.append(noc);
 			sb.append('\n');
 
 			sb.append("Number of Methods: ");
+			sb.append(";");
 			sb.append(nom);
 			sb.append('\n');
 

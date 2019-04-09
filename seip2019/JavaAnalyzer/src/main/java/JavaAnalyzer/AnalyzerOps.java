@@ -9,7 +9,7 @@ import java.util.ArrayList;
  *         the metrics and write data to CSV file This class is Facade class
  */
 
-public class Analyzer_OPS {
+public class AnalyzerOps {
 
 	/***
 	 * This method takes the java file and returns an ArrayList that include every
@@ -22,7 +22,7 @@ public class Analyzer_OPS {
 	public static ArrayList<String> readSourceCode(String path) {
 		ArrayList<String> code = new ArrayList<String>();
 		try {
-			code = Re_Wr_Ops.readFile(path);
+			code = ReWrOps.readFile(path);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}
@@ -61,7 +61,7 @@ public class Analyzer_OPS {
 		int nom = metrics[1];
 		int noc = metrics[2];
 
-		Re_Wr_Ops.insertCSV(loc, noc, nom);
+		ReWrOps.insertCSV(loc, noc, nom);
 
 	}
 

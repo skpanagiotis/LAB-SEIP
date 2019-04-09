@@ -9,7 +9,7 @@ import java.util.ArrayList;
  *
  */
 
-public class Analyzer_viaString implements Analyzer {
+public class AnalyzerViaString implements Analyzer {
 
 	/***
 	 * 
