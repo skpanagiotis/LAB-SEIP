@@ -2,7 +2,7 @@
 
 ## Description
 
-**2nd Assignment** includes a program that takes a java file and counts the lines of java code, the number of classes and the number of methods.
+**2nd Assignment** includes a program that takes a java file and counts the lines of java code, the number of classes and the number of methods and save the metrics in a csv file.
 
 ### Getting Started
 
@@ -19,6 +19,7 @@
 5. Go to folder /target `cd JavaAnalyzer\target`
 6. To run the program write:
 `java -jar metricsCalculator.jar [filepath] [string or regex]`
+7. In the folder `/target` you will find a csv file with metrics. 
 
 ### Built with
 - [Maven](https://maven.apache.org)
