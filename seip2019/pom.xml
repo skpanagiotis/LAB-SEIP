@@ -11,6 +11,6 @@
 	<modules>
 		<module>gradeshistogram</module>
 		<module>JavaAnalyzer</module>
-		<module>UnitTestingJavaFiles</module>
+		<module>UnitTestingAssignment</module>
 	</modules>
 </project>
