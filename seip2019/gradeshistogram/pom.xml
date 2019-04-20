@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>gr.aueb.dmst</groupId>
-		<artifactId>seip2019</artifactId>
+		<artifactId>LAB-SEIP</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<artifactId>gradeshistogram</artifactId>
