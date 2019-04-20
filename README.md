@@ -20,3 +20,10 @@ This repository includes my assignments for LAB Excercises in SEIP.
 ### Description
 
 **2nd Assignment** includes a program that takes a java file and counts the lines of java code, the number of classes and the number of methods with two techniques.
+
+
+## [3rd Assignment](seip2019/UnitTestingJavaFiles)
+
+### Description
+
+**3rd Assignment** includes tests for three java classess.
