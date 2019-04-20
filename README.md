@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/skpanagiotis/LAB-SEIP.svg?token=j5Eyx8dd4DsNt7dNcaBq&branch=master)](https://travis-ci.com/skpanagiotis/LAB-SEIP)
+
 # LAB-SEIP
 This repository includes my assignments for LAB Excercises in SEIP.
 
