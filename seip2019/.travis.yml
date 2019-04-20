@@ -4,5 +4,17 @@ jdk:
   - openjdk8
   - oraclejdk8
 
+branches:
+  only:
+    - master
+
+sudo: required
+
+before_install:
+  - sudo apt update
+
+install:
+  - sudo apt install maven -y
+
 script:
   - mvn clean package
