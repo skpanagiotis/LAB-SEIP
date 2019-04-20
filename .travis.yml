@@ -21,4 +21,4 @@ before_script:
   - ls -la
 
 script:
-  - mvn intall
+  - mvn install
