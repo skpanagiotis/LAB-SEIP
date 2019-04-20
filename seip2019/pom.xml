@@ -3,14 +3,14 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>gr.aueb.dmst</groupId>
-	<artifactId>LAB-SEIP</artifactId>
+	<artifactId>seip2019</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>SEIP_LAB_2019</name>
 	<description>The XML for the LAB Assignments</description>
 	<modules>
-		<module>seip2019/gradeshistogram</module>
-		<module>seip2019/JavaAnalyzer</module>
-		<module>seip2019/UnitTestingAssignment</module>
+		<module>gradeshistogram</module>
+		<module>JavaAnalyzer</module>
+		<module>UnitTestingAssignment</module>
 	</modules>
 </project>

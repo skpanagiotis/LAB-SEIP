@@ -4,10 +4,10 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>gr.aueb.dmst</groupId>
-		<artifactId>LAB-SEIP</artifactId>
+		<artifactId>seip2019</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>metricsCalculator</artifactId>
+	<artifactId>JavaCodeAnalyzer</artifactId>
 	<name>JavaCodeAnalyzer</name>
 	<description>Java Code Analyzer counts the number of lines, the number of classes and the number of methods for a java file, with two techniques, by string and by regex</description>
 	<build>

@@ -16,5 +16,9 @@ before_install:
 install:
   - sudo apt install maven -y
 
+before_script:
+  - cd seip2019
+  - ls -la
+
 script:
-  - mvn clean package
+  - mvn intall
