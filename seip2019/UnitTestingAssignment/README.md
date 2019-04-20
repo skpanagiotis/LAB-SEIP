@@ -14,7 +14,7 @@
 
 1. Clone or Download the project in your local machine.
 2. Open your terminal.
-3. Go to folder /seip2019/UnitTestingJavaFiles `cd ..../folder1/folder2/seip2019/UnitTestingJavaFiles`
+3. Go to folder /seip2019/UnitTestingAssignment `cd ..../folder1/folder2/seip2019/UnitTestingAssignment`
 4. Write `mvn test` 
 
 ### Built with
