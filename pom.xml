@@ -9,8 +9,8 @@
 	<name>SEIP_LAB_2019</name>
 	<description>The XML for the LAB Assignments</description>
 	<modules>
-		<module>gradeshistogram</module>
-		<module>JavaAnalyzer</module>
-		<module>UnitTestingAssignment</module>
+		<module>seip2019/gradeshistogram</module>
+		<module>seip2019/JavaAnalyzer</module>
+		<module>seip2019/UnitTestingAssignment</module>
 	</modules>
 </project>
