@@ -5,6 +5,7 @@
 	<groupId>gr.aueb.dmst</groupId>
 	<artifactId>seip2019</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<relativePath>../seip2019</relativePath>
 	<packaging>pom</packaging>
 	<name>SEIP_LAB_2019</name>
 	<description>The XML for the LAB Assignments</description>
