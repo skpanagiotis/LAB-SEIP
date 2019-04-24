@@ -21,7 +21,7 @@ before_script:
   - ls -la
 
 script:
-  - mvn install
+  - mvn install  cobertura:cobertura
 
 after_success:
 - bash <(curl -s https://codecov.io/bash) -t fd5df06e-c96e-46aa-8fa0-99c1cd4b5da2
