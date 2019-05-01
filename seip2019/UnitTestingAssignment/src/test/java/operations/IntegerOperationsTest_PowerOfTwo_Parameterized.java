@@ -5,12 +5,18 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameters;
 
+package operations;
+
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
+import org.junit.runners.Parameterized.Parameter;
+import org.junit.runners.Parameterized.Parameters;
+
 import static org.junit.Assert.assertEquals;
 
 import java.util.Arrays;
 import java.util.Collection;
-
-import org.junit.Before;
 
 /***
  * This class tests powerOfTwo method of IntegerOperations with Parameters
@@ -21,35 +27,21 @@ import org.junit.Before;
 
 @RunWith(Parameterized.class)
 public class IntegerOperationsTest_PowerOfTwo_Parameterized {
+	
+	@Parameter (value = 0)
+	public int power;
+	@Parameter (value = 1)
+	public int result;
+	
+	
+	IntegerOperations io = new IntegerOperations();
 
-	private int power;
-	private int result;
-	private IntegerOperations io;
-
-	@Before
-	/***
-	 * This method makes an Integer Operations object.
-	 */
-	public void initialize() {
-		io = new IntegerOperations();
-	}
-
-	/***
-	 * 
-	 * @param power: The given power
-	 * @param result: The result of 2^power
-	 */
-	public IntegerOperationsTest_PowerOfTwo_Parameterized(int power, int result) {
-		this.power = power;
-		this.result = result;
-	}
-
-	@Parameters
 	/***
 	 * This method creates and array with parameters for testing.
 	 * 
 	 * @return an array with parameters
 	 */
+	@Parameters
 	public static Collection<Object[]> data() {
 		Object[][] data = new Object[][] { { 0, 1 }, { 1, 2 }, { 3, 8 }, { 4, 16 } };
 
@@ -65,3 +57,4 @@ public class IntegerOperationsTest_PowerOfTwo_Parameterized {
 	}
 
 }
+
