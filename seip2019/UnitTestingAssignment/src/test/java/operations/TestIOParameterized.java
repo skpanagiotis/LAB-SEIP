@@ -1,10 +1,12 @@
 package operations;
+
+import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameter;
 import org.junit.runners.Parameterized.Parameters;
-import static org.junit.Assert.assertEquals;
+
 import java.util.Arrays;
 import java.util.Collection;
 
@@ -16,7 +18,7 @@ import java.util.Collection;
  */
 
 @RunWith(Parameterized.class)
-public class IntegerOperationsTest_PowerOfTwo_Parameterized {
+public class TestIOParameterized {
 	
 	@Parameter (value = 0)
 	public int power;
@@ -43,8 +45,7 @@ public class IntegerOperationsTest_PowerOfTwo_Parameterized {
 	 */
 	@Test
 	public void test_powerOfTwo_good() {
-		assertEquals(result, io.powerOfTwo(power));
+		Assert.assertEquals(result, io.powerOfTwo(power));
 	}
 
 }
-

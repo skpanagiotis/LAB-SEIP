@@ -2,6 +2,7 @@ package operations;
 
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
+import org.junit.runners.Suite.SuiteClasses;
 
 /**
  * This class is a suite for IntegerOperation class's tests.
@@ -11,7 +12,7 @@ import org.junit.runners.Suite;
  */
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ IntegerOperationsTest.class, IntegerOperationsTest_PowerOfTwo_Parameterized.class })
+@SuiteClasses({ IntegerOperationsTest.class, TestIOParameterized.class })
 public class IntegerOperationsTestSuite {
 	/*
 	 * This class is empty because is used to hold the above annotations.
