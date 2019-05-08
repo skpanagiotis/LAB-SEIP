@@ -28,29 +28,9 @@ public class ArrayOperrationsTest {
 
 		ao = new ArrayOperrations(fio, io);
 
-		String filepath = "src/test/resources/test.txt";
+		String filepath = "src/test/resources/test_valid.txt";
 
-		doThrow(new IllegalArgumentException()).when(fio).readFile(filepath);
-
-		ao.findMaxInFile(filepath);
-
-	}
-
-	/***
-	 * This method tests the findMaxInFile method for the case that the given file
-	 * has invalid data.
-	 */
-	@Test(expected = NumberFormatException.class)
-	public void test_findMaxInFile_invalidfile() {
-		FileIO fio = mock(FileIO.class);
-		IntegerOperations io = mock(IntegerOperations.class);
-
-		ao = new ArrayOperrations(fio, io);
-
-		String filepath = "src/test/resources/test_invalid.txt";
-
-		doThrow(new NumberFormatException()).when(fio).readFile(filepath);
-
+		when(fio.readFile(filepath)).thenReturn(new int[] {});
 		ao.findMaxInFile(filepath);
 
 	}
@@ -80,35 +60,15 @@ public class ArrayOperrationsTest {
 	 * does not exist.
 	 */
 	@Test(expected = IllegalArgumentException.class)
-	public void test_reverseArray_filenotexist() {
+	public void test_reverseArray_emptyArray() {
 		FileIO fio = mock(FileIO.class);
 		IntegerOperations io = mock(IntegerOperations.class);
 
 		ao = new ArrayOperrations(fio, io);
 
-		String filepath = "src/test/resources/test.txt";
+		String filepath = "src/test/resources/test_valid.txt";
 
-		doThrow(new IllegalArgumentException()).when(fio).readFile(filepath);
-
-		ao.reverseArray(filepath);
-
-	}
-
-	/***
-	 * This method tests the reverseArray method for the case that the given file
-	 * has invalid data.
-	 */
-	@Test(expected = NumberFormatException.class)
-	public void test_reverseArray_invalidfile() {
-		FileIO fio = mock(FileIO.class);
-		IntegerOperations io = mock(IntegerOperations.class);
-
-		ao = new ArrayOperrations(fio, io);
-
-		String filepath = "src/test/resources/test_invalid.txt";
-
-		doThrow(new NumberFormatException()).when(fio).readFile(filepath);
-
+		when(fio.readFile(filepath)).thenReturn(new int[] {});
 		ao.reverseArray(filepath);
 
 	}
